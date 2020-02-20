@@ -62,27 +62,24 @@ class exam: public student
 class results:public exam
 {
 	public:
-	
-	int c=(m1+m2+m3+m4+m5+m6)/6;	
+	float res()
+	{
+	float c=(m1+m2+m3+m4+m5+m6)/6;
+	}
 	void final()
 	{
 		//void display1();
-		cout<<"final average marks of 6 subjects are: "<<c<<endl;
+		cout<<"final average marks of 6 subjects are: "<<res()<<endl;
 	}
 };
 
 int main()
 {
-	student ob1;
+	results ob1;
 	ob1.getdata();
-	
-	exam ob2;
-	ob2.getdata1();
-	
-	results ob3;
-	
-	
+	ob1.getdata1();
 	ob1.display();
-	ob2.display1();
-	ob3.final();
+	ob1.display1();
+	ob1.res();
+	ob1.final();
 }
