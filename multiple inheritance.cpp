@@ -64,8 +64,10 @@ class results:public exam
 	public:
 	float res()
 	{
-	float c=(m1+m2+m3+m4+m5+m6)/6;
-	}
+		float c=(m1+m2+m3+m4+m5+m6)/6;
+		return c;
+	}	
+		
 	void final()
 	{
 		//void display1();
@@ -82,4 +84,5 @@ int main()
 	ob1.display1();
 	ob1.res();
 	ob1.final();
+	
 }
