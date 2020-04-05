@@ -27,6 +27,8 @@ else
 }
 
 catch(int i)
-{
-cout<<"Answer is infinite because a-b is:"<<i;
-}
+  {
+    cout<<"Answer is infinite because a-b is:"<<i;
+  }
+}  
+  
